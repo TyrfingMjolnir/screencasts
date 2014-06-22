@@ -69,9 +69,8 @@ app.controller( 'MainCtrl', function( $scope, $document, $location, examples ) {
             }
           break;
           default:
-/* uncomment the next line and open your console next time your run this if you'd like to explore key codes.
-            console.log( e.keyCode );
-*/
+          // uncomment the line below and open your console next time your run this if you'd like to explore key codes.
+//          console.log( e.keyCode );
         }
         
         // Navigate to the previous or next example.
