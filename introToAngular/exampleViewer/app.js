@@ -51,6 +51,8 @@ app.controller( 'MainCtrl', function( $scope, $document, $location, examples ) {
         n = parseInt( path.substr( 1 ), 10 );
 
         // Increment or decrement the example number.
+        // doom: https://en.wikipedia.org/wiki/Arrow_keys#WASD_keys
+        // vi:   https://en.wikipedia.org/wiki/Arrow_keys#HJKL_keys
         switch( e.keyCode ) {
           // LEFT
           case 37: // arrow key left
