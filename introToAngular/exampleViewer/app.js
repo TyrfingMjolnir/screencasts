@@ -39,9 +39,6 @@ app.factory( 'examples', function( $http ) {
 // Responsible for navigating based on key events.
 app.controller( 'MainCtrl', function( $scope, $document, $location, examples ) {
   examples.list( function( examples ) {
-    var LEFT = 37,
-        RIGHT = 39;
-
     $scope.changeExample = function( e ) {
       var path = $location.path(),
           // The example number
@@ -56,17 +53,17 @@ app.controller( 'MainCtrl', function( $scope, $document, $location, examples ) {
         // Increment or decrement the example number.
         switch( e.keyCode ) {
           // LEFT
-          case 37:
-          case 65:
-          case 72:
+          case 37: // arrow key left
+          case 65: // A
+          case 72: // H
             if( n > 1 ) {
               n--;
             }
           break;
           // RIGHT
-          case 39:
-          case 68:
-          case 76:
+          case 39: // arrow key right
+          case 68: // D
+          case 76: // L
             if( n < examples.length ) {
               n++;
             }
