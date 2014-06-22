@@ -54,16 +54,16 @@ app.controller( 'MainCtrl', function( $scope, $document, $location, examples ) {
         switch( e.keyCode ) {
           // LEFT
           case 37: // arrow key left
-          case 65: // A
-          case 72: // H
+          case 65: // A doom
+          case 72: // H vi
             if( n > 1 ) {
               n--;
             }
           break;
           // RIGHT
           case 39: // arrow key right
-          case 68: // D
-          case 76: // L
+          case 68: // D doom
+          case 76: // L vi
             if( n < examples.length ) {
               n++;
             }
